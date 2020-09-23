@@ -10,7 +10,6 @@ function App() {
             <navbar>
                 <link/>
                 <title/>
-                <link/>
                 <cartNotification/>
             </navbar>
 
