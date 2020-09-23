@@ -7,11 +7,7 @@ function App() {
     return (
         <div className="App">
 
-            <navbar>
-                <link/>
-                <title/>
-                <cartNotification/>
-            </navbar>
+
 
 
             <Compteur/>
