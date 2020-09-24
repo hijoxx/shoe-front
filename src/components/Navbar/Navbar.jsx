@@ -1,16 +1,19 @@
 import React from "react";
 import Cartnotification from "./CartNotification/CartNotification";
+import 'materialize-css';
+
 
 function Navbar() {
-
     return (
+
         <nav>
+
             <div className="nav-wrapper ">
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="/">Men</a></li>
+                <ul id="nav-mobile" className="left hide-on-med-and-down">
+                    <li><a className="text-darken-2" href="/">Men</a></li>
                     <li><a href="/">Women</a></li>
                     <li><a href="/">Kids</a></li>
-                    <li><h1 class="brand-logo center">SNKRS.</h1></li>
+                    <li><h1 className="brand-logo center">SNKRS.</h1></li>
                     <li><a href="/">Mybag</a></li>
                     <li><Cartnotification/></li>
                 </ul>

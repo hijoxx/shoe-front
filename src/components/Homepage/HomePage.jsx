@@ -8,14 +8,14 @@ import BackgroundShoeBlured from "./BackgroundShoeBlured/BackgroundShoeBlured"
 
 function HomePage() {
     return (
-        <body>
+        <div>
             <ShoePicture/>
             <ShoeName>Mayfly  Woven</ShoeName>
             <ShoeBrand>Nike</ShoeBrand>
             <ButtonCarroussel/>
             <BackgroundShoeBlured/>
             <ButtonProduct>View Product</ButtonProduct>
-        </body>
+        </div>
     )
 }
 
