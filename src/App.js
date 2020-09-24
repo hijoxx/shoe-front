@@ -1,17 +1,18 @@
 import React from 'react';
 
 import './App.css';
-import {Compteur} from "./components/Homepage/ShoePicture/ShoePicture";
+import Navbar from "./components/Navbar/Navbar";
+import {Test} from "./components/Homepage/ShoePicture/Test";
+import HomePage from "./components/Homepage/HomePage";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
         <div className="App">
-
-
-
-
-            <Compteur/>
-
+            <Navbar/>
+            <HomePage/>
+            <Footer/>
+          <Test/>
         </div>
     );
 }

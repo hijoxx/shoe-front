@@ -1,8 +1,8 @@
 import React, {} from 'react'
 
- function ShoePicture() {
+export function Test() {
     return <div>
 
     </div>
 }
-export default ShoePicture
+

@@ -1,11 +1,8 @@
 import React, {} from 'react'
 
-function ShoeName({children}) {
-
+function ShoeBrand({children}) {
     return <div>
         <h1>{children}</h1>
     </div>
-
 }
-
-export default ShoeName
+export default ShoeBrand
