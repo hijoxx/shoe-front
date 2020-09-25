@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export function useIncrement(initial =0 ,step=1){
+function useIncrement(initial =0 ,step=1){
     const[count,setCount] = useState(initial)
 
     const increment = ()=> {
@@ -8,3 +8,5 @@ export function useIncrement(initial =0 ,step=1){
     }
     return [count,increment]
 }
+
+export default useIncrement

@@ -1,11 +1,23 @@
-import React, {} from 'react'
+import React, {useEffect,} from 'react'
+import useIncrement from "../../../Hooks/useIncrement";
 
-function ButtonCarroussel() {
-    return <div>
+function ButtonCarroussel({key}) {
 
-       <button>
+    const [product, incrementedProduct] = useIncrement(0, 1)
 
-       </button>
+    useEffect(() => {
+        {key = product}
+        console.log(key)
+    })
+
+
+return (
+
+    <div>
+        <button onClick={incrementedProduct} id={key}>
+        </button>
     </div>
+)
 }
+
 export default ButtonCarroussel

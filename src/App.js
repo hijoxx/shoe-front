@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar/Navbar";
 import {Test} from "./components/Homepage/ShoePicture/Test";
 import HomePage from "./components/Homepage/HomePage";
 import Footer from "./components/Footer/Footer";
+import "materialize-css/dist/css/materialize.min.css";
+import "materialize-css/dist/js/materialize.min.js";
+
 
 function App() {
     return (

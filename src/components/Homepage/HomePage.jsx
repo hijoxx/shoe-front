@@ -5,16 +5,22 @@ import ShoeBrand from "./ShoeBrand/ShoeBrand";
 import ButtonCarroussel from "./ButtonCarroussel/ButtonCarroussel";
 import ButtonProduct from "./ButtonProduct/ButtonProduct";
 import BackgroundShoeBlured from "./BackgroundShoeBlured/BackgroundShoeBlured"
+import database from "./../../models/database.json"
 
 function HomePage() {
+    const data = database;
     return (
         <div>
-            <ShoePicture/>
-            <ShoeName>Mayfly  Woven</ShoeName>
-            <ShoeBrand>Nike</ShoeBrand>
-            <ButtonCarroussel/>
-            <BackgroundShoeBlured/>
-            <ButtonProduct>View Product</ButtonProduct>
+            {data.shoe.map((d) => <div key={d.id}>
+                {console.log(data.shoe.length)
+                }            <ShoePicture />
+                    <ShoeName>{d.name}</ShoeName>
+                    <ShoeBrand>{d.brand}</ShoeBrand>
+                    <ButtonCarroussel/>
+                    <BackgroundShoeBlured/>
+                    <ButtonProduct id={"product"+d.id}>View Product</ButtonProduct>
+                </div>
+            )}
         </div>
     )
 }
