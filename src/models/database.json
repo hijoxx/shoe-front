@@ -49,6 +49,22 @@
         "men",
         "kids"
       ]
+    },
+    {
+      "id": 4,
+      "name": "Mayfly Woven",
+      "brand": "Adidas",
+      "color": [
+        "green",
+        "black"
+      ],
+      "picture": "https://img2.freepng.fr/20180629/hp/kisspng-nike-air-max-nike-free-sneakers-nike-flywire-nike-shoe-5b35d026b8dae3.7012697415302533507572.jpg",
+      "price" : "19,99 €",
+      "decription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a lectus sit amet mi dictum.",
+      "category" : [
+        "men",
+        "kids"
+      ]
     }
   ]
 }

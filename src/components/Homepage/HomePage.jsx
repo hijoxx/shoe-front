@@ -6,19 +6,22 @@ import ButtonCarroussel from "./ButtonCarroussel/ButtonCarroussel";
 import ButtonProduct from "./ButtonProduct/ButtonProduct";
 import BackgroundShoeBlured from "./BackgroundShoeBlured/BackgroundShoeBlured"
 import database from "./../../models/database.json"
+import idSlider from "./../../constant/constant"
 
 function HomePage() {
-    const data = database;
+    const data = database
+
+
+    console.log(idSlider)
     return (
         <div>
-            {data.shoe.map((d) => <div key={d.id}>
-                {console.log(data.shoe.length)
-                }            <ShoePicture />
+            {[data.shoe[idSlider]].map((d) => <div key={d.id}>
+                <ShoePicture link={d.picture} name={d.name} />
                     <ShoeName>{d.name}</ShoeName>
                     <ShoeBrand>{d.brand}</ShoeBrand>
-                    <ButtonCarroussel/>
-                    <BackgroundShoeBlured/>
-                    <ButtonProduct id={"product"+d.id}>View Product</ButtonProduct>
+                    <ButtonCarroussel props={idSlider} size={data.shoe.length} />
+                    <BackgroundShoeBlured props={d.id}/>
+                    <ButtonProduct props={d.id}>View Product</ButtonProduct>
                 </div>
             )}
         </div>

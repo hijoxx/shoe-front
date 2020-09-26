@@ -1,23 +1,19 @@
-import React, {useEffect,} from 'react'
-import useIncrement from "../../../Hooks/useIncrement";
+import React, {useState} from 'react'
 
-function ButtonCarroussel({key}) {
-
-    const [product, incrementedProduct] = useIncrement(0, 1)
-
-    useEffect(() => {
-        {key = product}
-        console.log(key)
-    })
+function ButtonCarroussel({props,size}) {
+    const[count,setCount] = useState(props)
+    const increment = ()=> {
+        count >= size ? setCount(0):setCount(c => c + 1)
+    }
 
 
-return (
+    return (
+        <div>
 
-    <div>
-        <button onClick={incrementedProduct} id={key}>
-        </button>
-    </div>
-)
+
+            <button  onClick={increment}> ></button>
+        </div>
+    );
 }
 
-export default ButtonCarroussel
+export default {ButtonCarroussel,idSlider}

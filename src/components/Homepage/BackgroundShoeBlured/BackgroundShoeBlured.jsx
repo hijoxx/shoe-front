@@ -1,8 +1,16 @@
-import React, {} from 'react'
+import React from 'react'
+// import database from './../../../models/database.json'
 
-function BackgroundShoeBlured({name, children}) {
+function BackgroundShoeBlured({props}) {
+    // const data = database
+
+    // const blurredPict = data.shoe[props + 1].picture
+    const blurredPict = "yo"
+// console.log({props})
+
     return <div>
-        <img ref={children} alt={name}/>
+        <img src={blurredPict} alt ={props}/>
     </div>
 }
+
 export default BackgroundShoeBlured
