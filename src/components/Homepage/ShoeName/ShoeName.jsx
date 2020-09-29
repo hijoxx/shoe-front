@@ -11,8 +11,7 @@ function ShoeName({children}) {
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             textAlign: "right",
-            lineHeight :"0.9em"
-
+            lineHeight :"0.9em",
         }
     }
 
