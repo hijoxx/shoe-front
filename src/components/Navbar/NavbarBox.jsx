@@ -7,12 +7,17 @@ function NavbarBox() {
     const styles = {
         body: {
             backgroundColor: "#fefefe"
+        },
+        brand:{
+        fontSize:"1.6em",
+        fontWeight :" bold",
+        color : "#d1d1d1"
         }
     }
 
     return (
         <div style={styles.body}>
-
+<Navbar className="justify-content-between">
             <Nav>
                 <Nav.Item>
                     <Nav.Link className="text-dark" href="#">Men</Nav.Link>
@@ -25,20 +30,19 @@ function NavbarBox() {
                 </Nav.Item>
             </Nav>
 
-
-            <Nav className="justify-content-center" activeKey="/home">
+            <Nav activeKey="/home">
                 <Nav.Item>
-                    <Navbar.Brand className="text-secondary" href="#home">SNKRS.</Navbar.Brand>
+                    <Navbar.Brand style={styles.brand} href="#home">SNKRS.</Navbar.Brand>
                 </Nav.Item>
             </Nav>
-            <Nav className="justify-content-end" activeKey="/home">
+
+            <Nav activeKey="/home">
                 <Nav.Item>
                     <Nav.Link className="text-dark" href="#">My Bag</Nav.Link>
-
                 </Nav.Item>
                 <Nav.Item><Cartnotification/></Nav.Item>
             </Nav>
-
+</Navbar>
         </div>
     )
 }
