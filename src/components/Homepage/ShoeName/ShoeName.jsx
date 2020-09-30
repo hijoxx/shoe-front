@@ -1,4 +1,5 @@
 import React, {} from 'react'
+import NameFormat from "../../../helpers/NameFormat/NameFormat";
 
 function ShoeName({children}) {
     const styles = {
@@ -16,7 +17,7 @@ function ShoeName({children}) {
     }
 
     return <div>
-        <h1 style={styles.text}> {children.replace(" ", "\n")} </h1>
+        <h1 style={styles.text}> {NameFormat(children)} </h1>
     </div>
 
 }
