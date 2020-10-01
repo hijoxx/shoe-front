@@ -4,8 +4,7 @@ import ShoeName from "./ShoeName/ShoeName"
 import ButtonProduct from "./ButtonProduct/ButtonProduct";
 import BackgroundShoeBlured from "./BackgroundShoeBlured/BackgroundShoeBlured"
 import database from "./../../models/database.json"
-import { ArrowRight } from 'react-bootstrap-icons';
-
+import { ArrowRight } from 'react-bootstrap-icons'
 
 function HomePage() {
     const data = database

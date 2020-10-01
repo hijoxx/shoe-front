@@ -13,6 +13,9 @@ function ShoeName({children}) {
             WebkitTextFillColor: "transparent",
             textAlign: "right",
             lineHeight :"0.9em",
+            filter: "grayscale(70%)",
+            opacity : "0.80",
+            blur :"15rem"
         }
     }
 
